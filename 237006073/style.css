@@ -1,0 +1,234 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: rgb(59, 255, 226);
+}
+
+h1, h2, h3 {
+    margin: 0;
+    padding: 10px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 15px;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+.navbar img {
+    height: 50px;
+    margin-right: auto; /* Memindahkan gambar ke sisi kiri */
+}
+
+.navbar a {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    margin: 0 10px;
+}
+
+.navbar a:hover {
+    color: #ff9800;
+}
+
+/* Isi Beranda */
+.isi-beranda {
+    text-align: center;
+    padding: 20px;
+}
+
+.isi-beranda img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.isi-beranda h1 {
+    font-size: 2.5em;
+    color: #333;
+}
+
+.keahlian {
+    margin-top: 20px;
+}
+
+.keahlian hr {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.keahlian h2 {
+    font-size: 1.5em;
+    color: #555;
+}
+
+.keahlian a {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 5px 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    color: #333;
+}
+
+.keahlian a:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+/* Tentang Saya */
+.tentang {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border: 2px solid #ddd; /* Menambahkan border */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    margin: 20px auto; /* Memberikan jarak di sekitar */
+    max-width: 800px; /* Membatasi lebar */
+}
+
+.tentang img {
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.tentang p {
+    font-size: 1.1em;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Bahasa */
+.bahasa {
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid #ddd; /* Menambahkan border */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    padding: 20px; /* Memberikan ruang di dalam */
+    margin: 20px auto; /* Memberikan jarak di sekitar */
+    max-width: 800px; /* Membatasi lebar */
+}
+
+.bahasa h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.bahasa img {
+    margin: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+/* Why Me? */
+.knp-saya {
+    padding: 20px;
+    text-align: center;
+}
+
+.knp-saya hr {
+    width: 50%;
+    margin: 10px auto;
+}
+
+.knp-saya p {
+    font-size: 1.1em;
+    color: #555;
+    margin: 10px 0;
+    text-align: left;
+    max-width: 800px;
+    margin: 10px auto;
+}
+
+/* Testimoni */
+.testimoni {
+    padding: 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+    border: 2px solid #ddd; /* Menambahkan border */
+    border-radius: 10px; /* Membuat sudut border melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    margin: 20px auto; /* Memberikan jarak di sekitar */
+    max-width: 800px; /* Membatasi lebar */
+}
+
+.testimoni h1 {
+    margin-bottom: 20px;
+    font-size: 1.8em;
+    color: #333;
+}
+
+.testimoni-2 {
+    display: block; /* Mengatur elemen menjadi vertikal */
+    text-align: center;
+}
+
+.testimoni-2 img {
+    border-radius: 50%;
+    margin: 20px auto; /* Memastikan gambar berada di tengah */
+    border: 2px solid #ddd; /* Menambahkan border pada gambar */
+    padding: 5px; /* Memberikan ruang di dalam border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan pada gambar */
+}
+
+.testimoni-2 p {
+    max-width: 600px; /* Membatasi lebar teks */
+    font-size: 1em;
+    color: #555;
+    text-align: center;
+    margin: 10px auto; /* Memberikan jarak antar elemen */
+}
+
+/* Footer */
+.footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    text-align: center; /* Memastikan semua elemen di footer berada di tengah */
+}
+
+.footer p {
+    margin: 0; /* Menghilangkan margin default */
+    font-size: 0.9em;
+    color: #4f4f4f;
+}
+
+.footer p a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+.footer p a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+.footer-2 {
+    text-align: center; /* Memastikan semua elemen di dalam footer-2 berada di tengah */
+    margin: 0 auto; /* Memastikan elemen berada di tengah secara horizontal */
+    padding: 10px; /* Memberikan sedikit ruang di dalam elemen */
+}
+
+.footer-2 h3 {
+    margin: 0 auto; /* Memastikan heading berada di tengah */
+    font-size: 1.2em;
+    color: #333;
+}
