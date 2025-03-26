@@ -270,10 +270,11 @@ img {
 
 /* Footer Section */
 .footer {
-    background-color: #343a40; /* Warna gelap untuk footer utama */
-    color: #f8f9fa; /* Warna teks terang */
-    padding: 30px 0; /* Padding atas dan bawah */
+    background-color: rgba(0, 0, 0, 0.7); /* Warna hitam dengan transparansi 70% */
+    color: white;
+    padding: 20px;
     text-align: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.2); /* Garis atas dengan transparansi */
 }
 
 .footer img {
@@ -316,8 +317,8 @@ img {
 
 /* Footer-2 Section */
 .footer-2 {
-    background-color: #212529; /* Warna lebih gelap untuk footer bawah */
-    color: #f8f9fa;
+    background-color:  rgb(59, 255, 226); /* Warna lebih gelap untuk footer bawah */
+    color: #000000;
     padding: 10px 0;
     text-align: center;
     font-size: 0.9rem;
@@ -326,7 +327,7 @@ img {
 .footer-2 h3 {
     margin: 0;
     font-size: 1rem;
-    color: #f8f9fa;
+    color: #000000;
 }
 
 button {
@@ -400,6 +401,64 @@ button:hover {
 .card-text {
     font-size: 1rem;
     color: #555;
+}
+
+/* Formulir Kontak */
+#kontak {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#kontak h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#kontak .form-label {
+    font-weight: bold;
+    color: #555;
+}
+
+#kontak .form-control {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+#kontak .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+#kontak button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#kontak button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    #kontak {
+        padding: 20px;
+    }
+
+    #kontak h2 {
+        font-size: 1.5rem;
+    }
 }
 
 

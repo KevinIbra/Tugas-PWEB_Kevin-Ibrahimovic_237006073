@@ -102,5 +102,42 @@ $(document).ready(function () {
     $('.dropdown-link').on('click', function () {
         $('.dropdown-menu').removeClass('active');
     });
+
+    $("#contactForm").on("submit", function (e) {
+        e.preventDefault(); // Mencegah pengiriman formulir secara default
+
+        let isValid = true;
+        let name = $("#name").val().trim();
+        let email = $("#email").val().trim();
+        let message = $("#message").val().trim();
+
+        // Validasi Nama
+        if (name === "") {
+            alert("Nama tidak boleh kosong.");
+            isValid = false;
+        }
+
+        // Validasi Email
+        if (email === "") {
+            alert("Email tidak boleh kosong.");
+            isValid = false;
+        } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            alert("Format email tidak valid.");
+            isValid = false;
+        }
+
+        // Validasi Pesan
+        if (message === "") {
+            alert("Pesan tidak boleh kosong.");
+            isValid = false;
+        }
+
+        // Jika validasi berhasil
+        if (isValid) {
+            alert("Formulir berhasil dikirim!");
+            // Anda dapat menambahkan logika pengiriman data ke server di sini
+            this.reset(); // Reset formulir
+        }
+    });
 });
 
