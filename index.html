@@ -6,56 +6,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="237006073\style.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="237006073/style.css">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
     <!-- Navbar -->
-    <div class="navbar">
-        <img src="Screenshot_1.png" alt="" height="50px">
-        <a href="#">Beranda</a>
-        <a href="#">Tentang</a>
-        <a href="#">Why Me?</a>
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">
+                <img src="Screenshot_1.png" alt="" height="50px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#why-me">Why Me?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimony">Testimoni</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     <!-- Navbar -->
 
     <!-- Isi -->
-    <div class="isi-beranda">
-        <img src="kevin buled.png" alt="" height="200px">
+    <div class="isi-beranda text-center py-5">
+        <img src="kevin buled.png" alt="" height="200px" class="rounded-circle mb-3">
         <h1>Kevin Ibrahimovic</h1>
         <div class="keahlian">
             <hr>
-            <h2>Keahlian</h3>
-                <a href="#">Web Developer</a>
-                <a href="#">Software Engginer</a>
-                <a href="#">Cyber Security</a>
-                <a href="#">UI/UX</a>
+            <h2>Keahlian</h2>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Web Developer</a>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Software Engineer</a>
+            <a href="#" class="btn btn-outline-primary rounded-pill">Cyber Security</a>
+            <a href="#" class="btn btn-outline-primary rounded-pill">UI/UX</a>
         </div>
     </div>
     <!-- Isi -->
 
     <!-- Tentang Saya -->
-    <div class="tentang">
-        <h1>Tentang Saya</h1>
-        <img src="Kevin 1.jpg" alt="" height="200px">
-        <p>Saya adalah seorang Web Developer dengan pengalaman dalam membangun website yang responsif, cepat, dan user-friendly. Dengan keahlian dalam HTML, CSS, JavaScript, dan framework 
-            seperti React dan Vue, saya memiliki kemampuan untuk mengubah ide menjadi solusi digital yang fungsional dan menarik.
-            Saya memiliki passion dalam coding dan problem-solving, serta selalu mengikuti perkembangan teknologi terbaru untuk 
-            memastikan bahwa proyek yang saya kerjakan selalu up-to-date dengan standar industri.</p>
-        <div class="bahasa">
-            <h2>Bahasa Yang Digunakan</h2>
-
-            <img src="css.jpg" alt="" height="100">
-            <img src="js.jpg" alt="" height="100">
-            <img src="react.png" alt="" height="100">
-            <img src="laravel.jpg" alt="" height="100">
+    <div id="tentang" class="container my-5">
+        <div class="card">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="Kevin 1.jpg" class="img-fluid rounded-start" alt="Kevin Ibrahimovic">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Tentang Saya</h5>
+                        <p class="card-text">
+                            Saya adalah seorang Web Developer dengan pengalaman dalam membangun website yang responsif, cepat, dan user-friendly. Dengan keahlian dalam HTML, CSS, JavaScript, dan framework seperti React dan Vue, saya memiliki kemampuan untuk mengubah ide menjadi solusi digital yang fungsional dan menarik.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
-
     </div>
     <!-- Tentang Saya -->
 
     <!-- Why Me? -->
-    <div class="knp-saya">
+    <div id="why-me" class="knp-saya">
         <h1>Why Me?</h1>
         <hr>
 
@@ -76,40 +103,66 @@
     <!-- Why Me? -->
 
     <!-- Testimoni -->
-    <div class="testimoni">
-        <h1>Testimoni</h1>
-        <div class="testimoni-2">
-            <img src="Aruna_Asian_man_in_suit_posing_for_a_formal_photo_with_straight_b39d3ce1-e8c6-4664-a7bd-b4818badee83.webp" alt="" height="150">
-            <p>⭐ "Sangat puas dengan hasil kerja yang profesional! Website bisnis saya kini lebih cepat, responsif, dan terlihat modern. Komunikasi dengan developer juga sangat lancar dan mudah. Highly recommended!"
-                📌 - Andi, Owner Toko Online</p>
-            <img src="foto-formal.width-800.format-webp.webp" alt="" height="150">
-            <p>⭐ "Luar biasa! Website yang dibangun tidak hanya terlihat bagus, tetapi juga sangat fungsional dan user-friendly. Terima kasih atas kerja keras dan dedikasinya!"
-                📌 - Maya, Founder Startup Teknologi</p>
-            <img src="istockphoto-940171136-612x612-1.jpg" alt="" height="150">
-            <p>⭐ "Proses pengerjaan sangat cepat dan hasilnya sesuai dengan ekspektasi. Saya senang bisa bekerja sama dengan developer yang paham kebutuhan bisnis saya!"
-                📌 - Rudi, Digital Marketer</p>
+    <div id="testimony" class="container my-5">
+        <h2 class="text-center">Testimoni</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="Aruna_Asian_man_in_suit_posing_for_a_formal_photo_with_straight_b39d3ce1-e8c6-4664-a7bd-b4818badee83.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>⭐ "Sangat puas dengan hasil kerja yang profesional! Highly recommended!" 📌 - Andi</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="foto-formal.width-800.format-webp.webp" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>⭐ "Luar biasa! Website yang dibangun sangat fungsional dan user-friendly." 📌 - Maya</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="istockphoto-940171136-612x612-1.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <p>⭐ "Proses pengerjaan sangat cepat dan hasilnya sesuai ekspektasi." 📌 - Rudi</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
         </div>
     </div>
     <!-- Testimoni -->
     <hr>
-    <div class="footer">
+    <div class="footer bg-dark text-white py-3">
         <img src="Screenshot_1.png" alt="" height="50px">
         <h3>💻 Dibangun dengan Passion, Kreativitas, & Teknologi</h3>
         <h3>🚀 Siap membawa bisnis Anda ke level berikutnya dengan website yang cepat, modern, dan responsif.</h3>
         <div class="about">
             <h3>About</h3>
-            <p>📩 Hubungi Saya: 085320520632 📧 Email: [237006073@student.unsil.ac.id]📱 WhatsApp: [+62 812-3456-7890]🔗 LinkedIn: linkedin.com/in/yourprofile🌐 Website: www.yourwebsite.com</p>
+            <p>📩 Hubungi Saya: 085320520632 📧 Email: [237006073@student.unsil.ac.id]</p>
         </div>
         <div class="social">
             <h3>Social</h3>
-            <p>IG: Kvin.ibra
-                FB: Kvin.ibra
-                X  : Kvin.ibra</p>
+            <p>IG: Kvin.ibra | FB: Kvin.ibra | X: Kvin.ibra</p>
         </div>
     </div>
-    <div class="footer-2">
-    <h3>&copy; 2025 Kevin Ibrahimovic | Cyber Security</h3>
-</div>
+    <div class="footer-2 bg-secondary text-white text-center py-2">
+        <h3>&copy; 2025 Kevin Ibrahimovic | Cyber Security</h3>
+    </div>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="237006073/script.js"></script>
 </body>
 
 </html>
