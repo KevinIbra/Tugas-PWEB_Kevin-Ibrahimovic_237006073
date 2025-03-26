@@ -109,11 +109,15 @@ $(document).ready(function () {
         let isValid = true;
         let name = $("#name").val().trim();
         let email = $("#email").val().trim();
+        let phone = $("#phone").val().trim();
         let message = $("#message").val().trim();
 
-        // Validasi Nama
+        // Validasi Nama Lengkap
         if (name === "") {
-            alert("Nama tidak boleh kosong.");
+            alert("Nama lengkap tidak boleh kosong.");
+            isValid = false;
+        } else if (name.length > 50) {
+            alert("Nama lengkap tidak boleh lebih dari 50 karakter.");
             isValid = false;
         }
 
@@ -124,20 +128,40 @@ $(document).ready(function () {
         } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
             alert("Format email tidak valid.");
             isValid = false;
+        } else if (email.length > 50) {
+            alert("Email tidak boleh lebih dari 50 karakter.");
+            isValid = false;
+        }
+
+        // Validasi Nomor Handphone
+        if (phone === "") {
+            alert("Nomor handphone tidak boleh kosong.");
+            isValid = false;
+        } else if (!/^\d+$/.test(phone)) {
+            alert("Nomor handphone hanya boleh berisi angka.");
+            isValid = false;
+        } else if (phone.length > 15) {
+            alert("Nomor handphone tidak boleh lebih dari 15 karakter.");
+            isValid = false;
         }
 
         // Validasi Pesan
         if (message === "") {
             alert("Pesan tidak boleh kosong.");
             isValid = false;
+        } else if (message.length > 200) {
+            alert("Pesan tidak boleh lebih dari 200 karakter.");
+            isValid = false;
         }
 
         // Jika validasi berhasil
         if (isValid) {
             alert("Formulir berhasil dikirim!");
-            // Anda dapat menambahkan logika pengiriman data ke server di sini
             this.reset(); // Reset formulir
         }
     });
 });
 
+document.querySelector(".nav-link").addEventListener("click", function(event) {
+    window.open(this.href, "_blank");
+});

@@ -149,6 +149,41 @@ img {
     line-height: 1.8;
 }
 
+/* Styling Tentang Saya */
+#tentang {
+    background-color: #f9f9f9;
+    padding: 20px; /* Kurangi padding untuk memperkecil tinggi */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+    max-width: 800px; /* Batasi lebar maksimal */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#tentang .card {
+    border: none;
+    background-color: transparent;
+}
+
+#tentang .card-title {
+    font-size: 1.2rem; /* Perkecil ukuran font judul */
+    font-weight: bold;
+    color: #333;
+}
+
+#tentang .card-text {
+    font-size: 0.9rem; /* Perkecil ukuran font teks */
+    color: #555;
+    line-height: 1.5;
+}
+
+#tentang img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 /* Bahasa */
 .bahasa {
     margin-top: 20px;
@@ -406,28 +441,32 @@ button:hover {
 /* Formulir Kontak */
 #kontak {
     background-color: #f9f9f9;
-    padding: 40px;
+    padding: 20px; /* Kurangi padding untuk memperkecil tinggi */
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto; /* Tambahkan margin otomatis untuk memusatkan */
+    max-width: 500px; /* Batasi lebar maksimal */
 }
 
 #kontak h2 {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Perkecil ukuran font judul */
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     color: #333;
+    text-align: center;
 }
 
 #kontak .form-label {
     font-weight: bold;
     color: #555;
+    font-size: 0.9rem; /* Perkecil ukuran label */
 }
 
 #kontak .form-control {
     border: 1px solid #ccc;
     border-radius: 5px;
-    padding: 10px;
-    font-size: 1rem;
+    padding: 8px; /* Kurangi padding untuk memperkecil tinggi input */
+    font-size: 0.9rem; /* Perkecil ukuran font input */
 }
 
 #kontak .form-control:focus {
@@ -439,7 +478,8 @@ button:hover {
     background-color: #007bff;
     color: #fff;
     font-weight: bold;
-    padding: 10px 20px;
+    padding: 8px 15px; /* Kurangi padding tombol */
+    font-size: 0.9rem; /* Perkecil ukuran font tombol */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -453,11 +493,12 @@ button:hover {
 /* Responsif untuk layar kecil */
 @media (max-width: 768px) {
     #kontak {
-        padding: 20px;
+        padding: 15px;
+        max-width: 90%; /* Sesuaikan lebar untuk layar kecil */
     }
 
     #kontak h2 {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
     }
 }
 

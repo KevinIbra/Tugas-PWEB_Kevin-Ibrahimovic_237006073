@@ -40,6 +40,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#testimony">Testimoni</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./blog.html" onclick="window.open(this.href, '_blank'); return false;">Blog</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -148,16 +151,20 @@
         <h2 class="text-center">Kontak Saya</h2>
         <form id="contactForm">
             <div class="mb-3">
-                <label for="name" class="form-label">Nama</label>
-                <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama Anda">
+                <label for="name" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Masukkan nama lengkap Anda" maxlength="50">
             </div>
             <div class="mb-3">
                 <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email Anda">
+                <input type="email" class="form-control" id="email" name="email" placeholder="Masukkan email Anda" maxlength="50">
+            </div>
+            <div class="mb-3">
+                <label for="phone" class="form-label">Nomor Handphone</label>
+                <input type="text" class="form-control" id="phone" name="phone" placeholder="Masukkan nomor handphone Anda" maxlength="15">
             </div>
             <div class="mb-3">
                 <label for="message" class="form-label">Pesan</label>
-                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tulis pesan Anda"></textarea>
+                <textarea class="form-control" id="message" name="message" rows="4" placeholder="Tulis pesan Anda" maxlength="200"></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Kirim</button>
         </form>
@@ -182,8 +189,11 @@
         <h3>&copy; 2025 Kevin Ibrahimovic | Cyber Security</h3>
     </div>
 
-    <!-- Bootstrap 5 JS -->
+    <!-- jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Then Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Your custom scripts last -->
     <script src="237006073/script.js"></script>
 </body>
 

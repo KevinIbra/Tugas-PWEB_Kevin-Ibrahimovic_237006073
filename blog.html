@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="237006073\blog.css">
+</head>
+
+<body>
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Blog</h1>
+        <div class="row">
+            <!-- Blog Post 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="blog-image-1.jpg" class="card-img-top" alt="Blog Image 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Blog 1</h5>
+                        <p class="card-text">Deskripsi singkat dari blog ini. Klik untuk membaca lebih lanjut.</p>
+                        <a href="artikel.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Blog Post 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card">
+                    <img src="blog-image-2.jpg" class="card-img-top" alt="Blog Image 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Judul Blog 2</h5>
+                        <p class="card-text">Deskripsi singkat dari blog ini. Klik untuk membaca lebih lanjut.</p>
+                        <a href="artikel.html" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Judul Artikel</h1>
+        <div class="mb-4">
+            <img src="artikel-image.jpg" class="img-fluid rounded" alt="Artikel Image">
+        </div>
+        <p>
+            Konten artikel lengkap ditulis di sini. Anda dapat menambahkan paragraf, gambar, atau elemen lainnya sesuai kebutuhan.
+        </p>
+
+        <!-- Tombol Share -->
+        <div class="my-4">
+            <button class="btn btn-primary btn-share" data-platform="facebook">Bagikan ke Facebook</button>
+            <button class="btn btn-info btn-share" data-platform="twitter">Bagikan ke Twitter</button>
+        </div>
+
+        <!-- Tombol Artikel Sebelumnya dan Selanjutnya -->
+        <div class="d-flex justify-content-between my-4">
+            <button class="btn btn-outline-secondary btn-prev">Artikel Sebelumnya</button>
+            <button class="btn btn-outline-secondary btn-next">Artikel Selanjutnya</button>
+        </div>
+
+        <!-- Rekomendasi Artikel Lainnya -->
+        <h3>Rekomendasi Artikel Lainnya</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="rekomendasi-1.jpg" class="card-img-top" alt="Rekomendasi 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Artikel 1</h5>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="rekomendasi-2.jpg" class="card-img-top" alt="Rekomendasi 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Artikel 2</h5>
+                        <a href="#" class="btn btn-primary">Baca Selengkapnya</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Komentar Pengunjung -->
+        <h3 class="mt-5">Komentar Pengunjung</h3>
+        <div class="mb-4">
+            <div class="border p-3 mb-3">
+                <strong>Pengunjung 1:</strong>
+                <p>Artikel ini sangat bermanfaat!</p>
+            </div>
+            <div class="border p-3 mb-3">
+                <strong>Pengunjung 2:</strong>
+                <p>Saya sangat menyukai pembahasannya.</p>
+            </div>
+        </div>
+
+        <!-- Kolom Komentar -->
+        <h3>Tulis Komentar</h3>
+        <form id="commentForm">
+            <div class="mb-3">
+                <label for="nama" class="form-label">Nama</label>
+                <input type="text" class="form-control" id="nama" placeholder="Masukkan nama Anda">
+            </div>
+            <div class="mb-3">
+                <label for="komentar" class="form-label">Komentar</label>
+                <textarea class="form-control" id="komentar" rows="4" placeholder="Tulis komentar Anda"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+        </form>
+
+        <!-- Daftar Komentar -->
+        <div class="comment-list mt-4"></div>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- JS -->
+    <script src="237006073\blog.js"></script>
+    <!-- JS -->
+</body>
+
+</html>
