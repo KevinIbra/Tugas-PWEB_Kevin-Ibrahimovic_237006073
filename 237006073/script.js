@@ -160,6 +160,38 @@ $(document).ready(function () {
             this.reset(); // Reset formulir
         }
     });
+
+    $("#contactForm").on("submit", function(e) {
+        e.preventDefault();
+
+        let formData = $(this).serialize();
+
+        $.ajax({
+            type: "POST",
+            url: "save_contact.php",
+            data: formData,
+            dataType: "json",
+            success: function(response) {
+                let alertClass = response.status === "success" ? "alert-success" : "alert-danger";
+                $("#formMessage")
+                    .removeClass("alert-success alert-danger")
+                    .addClass(alertClass)
+                    .html(response.message)
+                    .show();
+
+                if (response.status === "success") {
+                    $("#contactForm")[0].reset();
+                }
+            },
+            error: function() {
+                $("#formMessage")
+                    .removeClass("alert-success")
+                    .addClass("alert-danger")
+                    .html("Terjadi kesalahan. Silakan coba lagi.")
+                    .show();
+            }
+        });
+    });
 });
 
 document.querySelector(".nav-link").addEventListener("click", function(event) {
